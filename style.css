@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+main{
+    max-width: 800px;
+    display: flex;
+    border-radius: 5px;
+    
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.container{
+    padding: 30px;
+}
+
+.container i{
+    color: white;
+    font-size: 30px;
+    opacity: 0.5;
+    padding-left: 20px;
+}
+
+.container h3{
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 400;
+    padding: 20px;
+    font-size: xx-large;
+}
+
+.container p{
+    padding: 20px;
+    color: white;
+    font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container button{
+    text-wrap: nowrap;
+    font-weight: 600;
+    font-family: "Montserrat";
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    margin: 50px 0px 0px 20px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    outline: 1px;
+    border: 1px solid white;
+    color: inherit;
+}
+
+#A{
+    color: hsl(31, 77%, 52%);
+}
+
+#B{
+    color: hsl(184, 100%, 22%);
+}
+
+#C{
+    color: hsl(179, 100%, 13%);
+}
+
+#A:active{
+   color: white;
+}
+
+#B:active{
+    color: white;
+ }
+
+ #C:active{
+    color: white;
+ }
+ 
+
+.container button:active{
+   
+    background-color: transparent;
+    color: white;
+}
+
+#first{
+    background-color: hsl(31, 77%, 52%);
+}
+
+#second{
+    background-color: hsl(184, 100%, 22%);
+}
+
+#third{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.attribution{
+    font-family: "Montserrat";
+    padding: 10px;
+    font-size: medium;
+}
+
+.attribution a{
+    text-decoration: none;
+}
+
+@media screen and (max-width:500px){
+    main{
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    section{
+        height: 100%;
+        
+    }
+}
+
